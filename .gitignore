@@ -1,0 +1,7 @@
+*.kicad_prl
+*cache
+*.xml
+
+_autosave*
+__MACOSX/
+.DS_Store
