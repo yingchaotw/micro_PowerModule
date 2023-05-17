@@ -1,8 +1,4 @@
----
-title: µPower Module
----
-
-[![Power µModule](https://img.shields.io/static/v1?label=&message=µPower%20Module&color=gray&logo=Github)](https://github.com/tw1chao/LM317SupplyModule)
+[![Power µModule](https://img.shields.io/static/v1?label=&message=µPower%20Module&color=gray&logo=Github)](https://github.com/tw1chao/micro_PowerModule)
 [![license - CC BY-SA 4.0](https://img.shields.io/static/v1?label=license&message=CC+BY-SA+4.0&color=fcaabe)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![forks - µPower Module](https://img.shields.io/github/forks/tw1chao/micro_PowerModule?style=social)](https://github.com/tw1chao/micro_PowerModule/fork)
 [![stars - µPower Module](https://img.shields.io/github/stars/tw1chao/micro_PowerModule?style=social)](https://github.com/tw1chao/micro_PowerModule/stargazers)
@@ -23,9 +19,10 @@ title: µPower Module
      1. MCU auto-regulator function
      2. Real time display of voltage and current
      3. Support [MikroBus](https://www.mikroe.com/mikrobus) Foot Position
-     4. PCB size and pinout support for [Arduino UNO](https://docs.arduino.cc/hardware/make-your-uno-kit)
-     5. Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
-     6. Use a led to display local or remote mode
+     4. Expansion of the MAX6675 Module K-Type Thermocouple Temperature Sensor using the SPI interface in the Mikrobus hardware interface Thermocouple Sensor
+     5. PCB size and pinout support for [Arduino UNO](https://docs.arduino.cc/hardware/make-your-uno-kit)
+     6. Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
+     7. Use a led to display local or remote mode
 
 # Cost
 
@@ -55,7 +52,7 @@ The required hardware units are divided into the following 6 items.
 1. Power
 2. Microcontroller
 3. Interface
-4. Sensor
+4. Sensor (Current/temperature)
 5. Connector
 6. Debug port
 
@@ -68,19 +65,19 @@ The required hardware units are divided into the following 6 items.
 
 ### Buck - Switching Voltage Regulators
 1. [MP2315SGJ-P ](https://mou.sr/3M9TaXc)
-> 1. [Mini low voltage module qs-1205cme-3a](https://dientu360.com/module-ha-ap-mini-qs-1205cme-3a)
-> 2. [【造物人】《可統編》1205CME-3A mini 超小體積 DC-DC可調降壓模組 效率97.5% 3A輸出 車載](https://shp.ee/5mihzr4)
->   
-> **QS-1205CME-3A SPECIFICATIONS**
-> - Using IC: MP2315GJ-Z TSOT23-8
-> - Input voltage: DC 4.5-24V
-> - Adjustable range (0.8-17V), fixed voltage (1.8V 2.5V 3.3V 5V 9V 12V)
-> - Efficiency: 97.5% at voltage 5 - 6.5V / 0.7A, 94% at voltage 5 - 12V / 1A.
-> - Switching frequency: 1MHz (normal), 1.5Mhz (max)
-> - Output current: 3A (peak value), 2.1A (long time)
-> - Output ripple: < 30mV
-> - Dimensions: 20x11x5mm
-> - Weight: 2g 
+    > 1. [Mini low voltage module qs-1205cme-3a](https://dientu360.com/module-ha-ap-mini-qs-1205cme-3a)
+    > 2. [【造物人】《可統編》1205CME-3A mini 超小體積 DC-DC可調降壓模組 效率97.5% 3A輸出 車載](https://shp.ee/5mihzr4)
+    >   
+    > **QS-1205CME-3A SPECIFICATIONS**
+    > - Using IC: MP2315GJ-Z TSOT23-8
+    > - Input voltage: DC 4.5-24V
+    > - Adjustable range (0.8-17V), fixed voltage (1.8V 2.5V 3.3V 5V 9V 12V)
+    > - Efficiency: 97.5% at voltage 5 - 6.5V / 0.7A, 94% at voltage 5 - 12V / 1A.
+    > - Switching frequency: 1MHz (normal), 1.5Mhz (max)
+    > - Output current: 3A (peak value), 2.1A (long time)
+    > - Output ripple: < 30mV
+    > - Dimensions: 20x11x5mm
+    > - Weight: 2g 
 
 ### Boost
 1. [MT3608](https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf)
@@ -89,7 +86,7 @@ The required hardware units are divided into the following 6 items.
 
 ### Cortex-M0
 1. [STM32F030F4](https://mou.sr/3nFtGYc)  NT$59.86 <!-- (https://www.st.com/en/microcontrollers-microprocessors/stm32f030f4.html) -->
-> STM32 does not support 5V operating voltage
+    > STM32 does not support 5V operating voltage
 2. [Infineon Technologies XMC1202T016X0016ABXUMA1](https://mou.sr/3B9SrP6)  NT$81.40
 3. [Renesas Electronics R7FA2E1A52DFJ#AA0](https://mou.sr/3nCrYa1)  NT$85.85 
 
@@ -108,15 +105,18 @@ The required hardware units are divided into the following 6 items.
 [MCP2003BT](https://mou.sr/41gydxO) NT$32.83 
 
 ### RS-485
-[SN65HVD75DR](https://mou.sr/3HQVWxX)  NT$93.03 
-
+1. [SN65HVD75DR](https://mou.sr/3HQVWxX)  NT\$93.03 
+2. [MAX485](https://mou.sr/42KdF2u) NT\$189.48
+    > These modules can be purchased and disassembled at a lower cost.
+    > <a href="https://shp.ee/ipzyxwm"> <img src="https://ae01.alicdn.com/kf/HTB1D1GINsfpK1RjSZFOq6y6nFXas/5PCS-LOT-MAX485-module-RS485-module-TTL-turn-RS-485-module-MCU-development-accessories.jpg" width="250"/> </a>
 
 ## Sensor
 
 ### Current Sensor
 1. [ACS712](https://www.velleman.eu/downloads/29/infosheets/acs712_datasheet.pdf)
-
-
+2. [INA219](https://mou.sr/45781sN)
+    > These modules can be purchased and disassembled at a lower cost.
+    > <a href="https://shp.ee/ipzyxwm"> <img src="https://www.vdrelectronics.com/storage/img/uploads/29814634.jpg" width="250"/> </a>
 
 # Reference
 
