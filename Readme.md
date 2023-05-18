@@ -24,11 +24,19 @@
      6. Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
      7. Use a led to display local or remote mode
 
+# HW Block Diagram
+
+<a href="https://app.diagrams.net"> <img src="./Document/Hardware%20Block%20Diagram/uPowerModuleBlockDiagram.png"/> </a>
+<BR/>
+plug-in module. ex. Temperature sensor, etc.. <br/>
+[block diagram source file](./Document/Hardware%20Block%20Diagram/%C2%B5PowerModule.drawio)
+
+
 # Cost
 
 |item|Category|Manufacturer|Product Number|Price </BR> (Mouser / Digikey) |
 |----|--------|------------|--------------|--------|
-|1|Microcontrollers|NXP|S9KEAZN8ACTG| [NT\$96.79](https://mou.sr/3LNAdIo) / [NT\$94.00](https://www.digikey.tw/short/0vqm55z1)|
+|1|Microcontrollers|NXP (maybe modify to stm32)|S9KEAZN8ACTG| [NT\$96.79](https://mou.sr/3LNAdIo) / [NT\$94.00](https://www.digikey.tw/short/0vqm55z1)|
 |2|Voltage Regulators|Monolithic Power Systems (MPS)|MP2315|[NT\$87.56](https://mou.sr/3M9TaXc) / [NT$98.00](https://www.digikey.tw/short/2qjpbj48)|
 |3|Digital Potentiometers|Microchip Technology|MCP4019T|[NT\$24.97](https://mou.sr/3HOJMpd) / [NT\$25.00](https://www.digikey.tw/short/0jqd2wv8)|
 |4|Transceivers|Texas Instruments|SN65HVD75DR|[NT\$93.03](https://mou.sr/3HQVWxX) / [NT\$97.00](https://www.digikey.tw/short/pb8hhdhp) |
