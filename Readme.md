@@ -26,10 +26,25 @@
 
 # HW Block Diagram
 
-<a href="https://app.diagrams.net"> <img src="./Document/Hardware%20Block%20Diagram/uPowerModuleBlockDiagram.png"/> </a>
+<a href="https://app.diagrams.net/#Htw1chao%2Fmicro_PowerModule%2Fmain%2FDocument%2FHardware%20Block%20Diagram%2F%C2%B5PowerModule.drawio"> <img src="./Document/Hardware%20Block%20Diagram/uPowerModuleBlockDiagram.png"/> </a>
 <BR/>
 plug-in module. ex. Temperature sensor, etc.. <br/>
-[block diagram source file](./Document/Hardware%20Block%20Diagram/%C2%B5PowerModule.drawio)
+
+# SW FlowChart
+```mermaid
+flowchart TD
+subgraph "System Initialization"
+  a("Check Communication") --> b(Check ADC) --> c(Read Sensor) --> d[buzzer <br> Make a sound]
+end
+
+subgraph "main"
+    A(Start) --> B[System<br>Initialization]
+    B --> C[Select Mode]
+    C -->D["Remote <PC>"]
+    C -->E["Local <encoder>"]
+end
+
+```
 
 
 # Cost
