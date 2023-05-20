@@ -49,12 +49,12 @@ end
 
 # Cost
 
-|item|Category|Manufacturer|Product Number|Price </BR> (Mouser / Digikey) |
-|----|--------|------------|--------------|--------|
-|1|Microcontrollers|NXP (maybe modify to stm32)|S9KEAZN8ACTG| [NT\$96.79](https://mou.sr/3LNAdIo) / [NT\$94.00](https://www.digikey.tw/short/0vqm55z1)|
-|2|Voltage Regulators|Monolithic Power Systems (MPS)|MP2315|[NT\$87.56](https://mou.sr/3M9TaXc) / [NT$98.00](https://www.digikey.tw/short/2qjpbj48)|
-|3|Digital Potentiometers|Microchip Technology|MCP4019T|[NT\$24.97](https://mou.sr/3HOJMpd) / [NT\$25.00](https://www.digikey.tw/short/0jqd2wv8)|
-|4|Transceivers|Texas Instruments|SN65HVD75DR|[NT\$93.03](https://mou.sr/3HQVWxX) / [NT\$97.00](https://www.digikey.tw/short/pb8hhdhp) |
+|item|Category|Manufacturer|Product Number|Price </BR> (Mouser / Digikey) | decision |
+|----|--------|------------|--------------|--------|------|
+|1|Microcontrollers| Respberry Pi | RP2040 | [NT\$34.20 ](https://mou.sr/45vLjef) / [NT$25.00](https://www.digikey.tw/short/p5ffv21r)| Yes |
+|2|Voltage Regulators|Monolithic Power Systems (MPS)|MP2315|[NT\$87.56](https://mou.sr/3M9TaXc) / [NT$98.00](https://www.digikey.tw/short/2qjpbj48)| - |
+|3|Digital Potentiometers|Microchip Technology|MCP4019T|[NT\$24.97](https://mou.sr/3HOJMpd) / [NT\$25.00](https://www.digikey.tw/short/0jqd2wv8)| - |
+|4|Transceivers|Texas Instruments|SN65HVD75DR|[NT\$93.03](https://mou.sr/3HQVWxX) / [NT\$97.00](https://www.digikey.tw/short/pb8hhdhp) | - |
 
 ---
 
@@ -105,16 +105,12 @@ The required hardware units are divided into the following 6 items.
 ### Boost
 1. [MT3608](https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf)
 
+
 ## ARM MCU 
 
-### Cortex-M0
-1. [STM32F030F4](https://mou.sr/3nFtGYc)  NT$59.86 <!-- (https://www.st.com/en/microcontrollers-microprocessors/stm32f030f4.html) -->
-    > STM32 does not support 5V operating voltage
-2. [Infineon Technologies XMC1202T016X0016ABXUMA1](https://mou.sr/3B9SrP6)  NT$81.40
-3. [Renesas Electronics R7FA2E1A52DFJ#AA0](https://mou.sr/3nCrYa1)  NT$85.85 
+1. [Raspberry Pi RP2040](https://mou.sr/45vLjef) NT\$34.20 
 
-### Cortex-M0+
-1. [NXP S9KEAZN8ACTG](https://mou.sr/3LNAdIo) NT$96.79
+<a href="https://www.waveshare.com/wiki/RP2040-Zero"> <img src="https://www.waveshare.com/w/upload/2/2b/RP2040-Zero-details-7.jpg" width="650"/> </a>
 
 
 ## [Provisional] Digital Potentiometer ICs 
@@ -124,12 +120,9 @@ The required hardware units are divided into the following 6 items.
 
 ## Interface
 
-### LIN Bus Transciver
-[MCP2003BT](https://mou.sr/41gydxO) NT$32.83 
-
 ### RS-485
 1. [SN65HVD75DR](https://mou.sr/3HQVWxX)  NT\$93.03 
-2. [MAX485](https://mou.sr/42KdF2u) NT\$189.48
+2. [MAX485](https://mou.sr/42Rj2wX) NT\$32.15
     > These modules can be purchased and disassembled at a lower cost.
     > <a href="https://shp.ee/ipzyxwm"> <img src="https://ae01.alicdn.com/kf/HTB1D1GINsfpK1RjSZFOq6y6nFXas/5PCS-LOT-MAX485-module-RS485-module-TTL-turn-RS-485-module-MCU-development-accessories.jpg" width="250"/> </a>
 

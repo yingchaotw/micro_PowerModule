@@ -1,6 +1,8 @@
+# Kicad file
 *.kicad_prl
 *cache
 *.xml
+\#auto_saved_files\#
 
 _autosave*
 __MACOSX/
