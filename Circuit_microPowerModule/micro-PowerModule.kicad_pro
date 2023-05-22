@@ -330,6 +330,10 @@
     [
       "7187d72d-86a6-4df3-a706-10f93237b261",
       "main_conrtol"
+    ],
+    [
+      "4d2335ad-4917-40e3-b9fc-5e8d69783b2a",
+      "OuputPower"
     ]
   ],
   "text_variables": {}

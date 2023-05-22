@@ -26,7 +26,7 @@
 
 # HW Block Diagram
 
-<a href="https://app.diagrams.net/#Htw1chao%2Fmicro_PowerModule%2Fmain%2FDocument%2FHardware%20Block%20Diagram%2F%C2%B5PowerModule.drawio"> <img src="./Document/Hardware%20Block%20Diagram/uPowerModuleBlockDiagram.png"/> </a>
+<a href="https://app.diagrams.net/#Htw1chao%2Fmicro_PowerModule%2Fmain%2FDocument%2FHardware%20Block%20Diagram%2F%C2%B5PowerModule.drawio"> <img src="./Document/Hardware%20Block%20Diagram/uPowerModuleBlockDiagram.png" /> </a>
 <BR/>
 plug-in module. ex. Temperature sensor, etc.. <br/>
 
@@ -52,22 +52,10 @@ end
 |item|Category|Manufacturer|Product Number|Price </BR> (Mouser / Digikey) | decision |
 |----|--------|------------|--------------|--------|------|
 |1|Microcontrollers| Respberry Pi | RP2040 | [NT\$34.20 ](https://mou.sr/45vLjef) / [NT$25.00](https://www.digikey.tw/short/p5ffv21r)| Yes |
-|2|Voltage Regulators|Monolithic Power Systems (MPS)|MP2315|[NT\$87.56](https://mou.sr/3M9TaXc) / [NT$98.00](https://www.digikey.tw/short/2qjpbj48)| - |
-|3|Digital Potentiometers|Microchip Technology|MCP4019T|[NT\$24.97](https://mou.sr/3HOJMpd) / [NT\$25.00](https://www.digikey.tw/short/0jqd2wv8)| - |
-|4|Transceivers|Texas Instruments|SN65HVD75DR|[NT\$93.03](https://mou.sr/3HQVWxX) / [NT\$97.00](https://www.digikey.tw/short/pb8hhdhp) | - |
+|2|RS485 Transceivers| MaxLinear, Inc.|SP485EN-L/TR|[NT\$32.15](https://mou.sr/42Rj2wX) / [NT\$34.00](https://www.digikey.tw/short/hb5m5z30) | Yes |
+|3|Voltage Regulators|Monolithic Power Systems (MPS)|MP2315|[NT\$71.48](https://mou.sr/45hrnM1) / [NT$98.00](https://www.digikey.tw/short/2qjpbj48)| - |
+|4|Digital Potentiometers|Microchip Technology|MCP4019T|[NT\$24.97](https://mou.sr/3HOJMpd) / [NT\$25.00](https://www.digikey.tw/short/0jqd2wv8)| - |
 
----
-
-## NOTE
-
-For using STM32F030F4, 3.3 volts is required to provide MCU operating voltage; for Renesas or Infineon series, 5 volts is available, but **unit price is higher** :( 
-
-### µModule Board Protocol
-
-LIN bus MCU is easy and cheap to operate, but not easy to control by computer.
-RS-485 price is higher, and the computer can have a module that can control directly.
-
----
 
 # Candidate Components
 
@@ -82,9 +70,10 @@ The required hardware units are divided into the following 6 items.
 ## Voltage Regulators
 
 ### LDO
-1. 3.3V [L78L33ACUTR](https://mou.sr/3NOMRcP)  NT$21.21 
-2. 5V [MIC5219-5.0YM5-TR](https://mou.sr/3HTMLwK) Output Current: 	500 mA NT$43.10
-3. 5V [R1172N501D-TR-FE](https://mou.sr/3HPtoog) Output Current: 1A  NT$41.73 	
+1. ADJ [MIC5205](https://mou.sr/3IsLs8f) Output Current: 150mA, Maximum Input Voltage: 16V NT\$19.84
+2. 3.3V [L78L33ACUTR](https://mou.sr/3NOMRcP) Output Current: 100mA, Maximum Input Voltage: 30V NT\$21.21 
+3. 5V [MIC5219-5.0YM5-TR](https://mou.sr/3HTMLwK) Output Current: 500mA, Maximum Input Voltage: 12V NT\$43.10
+4. 5V [R1172N501D-TR-FE](https://mou.sr/3HPtoog) Output Current: 1A, Maximum Input Voltage: 6V  NT\$41.73 	
 
 ### Buck - Switching Voltage Regulators
 1. [MP2315SGJ-P ](https://mou.sr/3M9TaXc)
