@@ -889,6 +889,19 @@
   )
 
 
+  (wire (pts (xy 98.552 146.304) (xy 98.552 142.24))
+    (stroke (width 0) (type default))
+    (uuid 074c878a-4c14-4ce6-9369-d7a64d6034eb)
+  )
+  (wire (pts (xy 86.868 151.384) (xy 90.932 151.384))
+    (stroke (width 0) (type default))
+    (uuid 55056a7f-fb90-4f07-bfbb-134f53c1370f)
+  )
+  (wire (pts (xy 98.552 142.24) (xy 101.6 142.24))
+    (stroke (width 0) (type default))
+    (uuid 77155bc1-1c91-4d7d-ab98-805cc826578f)
+  )
+
   (image (at 274.066 161.798) (scale 0.614583)
     (uuid 48c216b3-1d65-4023-a5e8-633bc7dc668a)
     (data

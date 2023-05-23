@@ -23,6 +23,8 @@
      5. PCB size and pinout support for [Arduino UNO](https://docs.arduino.cc/hardware/make-your-uno-kit)
      6. Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
      7. Use a led to display local or remote mode
+     8. Compatible [OpenLog](https://github.com/sparkfun/OpenLog) Module
+     9. Over voltage protection circuit
 
 # HW Block Diagram
 
@@ -34,7 +36,7 @@ plug-in module. ex. Temperature sensor, etc.. <br/>
 ```mermaid
 flowchart TD
 subgraph "System Initialization"
-  a("Check Communication") --> b(Check ADC) --> c(Read Sensor) --> d[buzzer <br> Make a sound]
+  a("Check Communication<BR>(UART/I2C/SPI/..)") --> b(Check ADC) --> c(Read Sensor) --> d[buzzer <br> Make a sound]
 end
 
 subgraph "main"
@@ -49,12 +51,13 @@ end
 
 # Cost
 
-|item|Category|Manufacturer|Product Number|Price </BR> (Mouser / Digikey) | decision |
+|item|Category|Manufacturer|Product Number|Price </BR> (Mouser / Digikey) | Decision |
 |----|--------|------------|--------------|--------|------|
 |1|Microcontrollers| Respberry Pi | RP2040 | [NT\$34.20 ](https://mou.sr/45vLjef) / [NT$25.00](https://www.digikey.tw/short/p5ffv21r)| Yes |
 |2|RS485 Transceivers| MaxLinear, Inc.|SP485EN-L/TR|[NT\$32.15](https://mou.sr/42Rj2wX) / [NT\$34.00](https://www.digikey.tw/short/hb5m5z30) | Yes |
-|3|Voltage Regulators|Monolithic Power Systems (MPS)|MP2315|[NT\$71.48](https://mou.sr/45hrnM1) / [NT$98.00](https://www.digikey.tw/short/2qjpbj48)| - |
-|4|Digital Potentiometers|Microchip Technology|MCP4019T|[NT\$24.97](https://mou.sr/3HOJMpd) / [NT\$25.00](https://www.digikey.tw/short/0jqd2wv8)| - |
+|3|Current Sensor|Texas Instruments |INA219|[NT\$89.61](https://mou.sr/45781sN) / [NT$93.00](https://www.digikey.tw/short/9j14fp42)| Yes |
+|4|System Voltage Regulators|Monolithic Power Systems (MPS)|MP2315|[NT\$71.48](https://mou.sr/45hrnM1) / [NT$98.00](https://www.digikey.tw/short/2qjpbj48)| Tentative |
+|5|Digital Potentiometers|Microchip Technology|MCP4019T|[NT\$24.97](https://mou.sr/3HOJMpd) / [NT\$25.00](https://www.digikey.tw/short/0jqd2wv8)| Tentative |
 
 
 # Candidate Components
@@ -106,22 +109,6 @@ The required hardware units are divided into the following 6 items.
 > Perhaps DAC ICs can be used instead of Digital Potentiometer ICs 
 1. [MCP4019T](https://mou.sr/3HOJMpd)  NT$24.97 
 2. [MCP4725](https://mou.sr/3IfzNtm) NT$46.17
-
-## Interface
-
-### RS-485
-1. [SN65HVD75DR](https://mou.sr/3HQVWxX)  NT\$93.03 
-2. [MAX485](https://mou.sr/42Rj2wX) NT\$32.15
-    > These modules can be purchased and disassembled at a lower cost.
-    > <a href="https://shp.ee/ipzyxwm"> <img src="https://ae01.alicdn.com/kf/HTB1D1GINsfpK1RjSZFOq6y6nFXas/5PCS-LOT-MAX485-module-RS485-module-TTL-turn-RS-485-module-MCU-development-accessories.jpg" width="250"/> </a>
-
-## Sensor
-
-### Current Sensor
-1. [ACS712](https://www.velleman.eu/downloads/29/infosheets/acs712_datasheet.pdf)
-2. [INA219](https://mou.sr/45781sN)
-    > These modules can be purchased and disassembled at a lower cost.
-    > <a href="https://shp.ee/ipzyxwm"> <img src="https://www.vdrelectronics.com/storage/img/uploads/29814634.jpg" width="250"/> </a>
 
 # Reference
 
