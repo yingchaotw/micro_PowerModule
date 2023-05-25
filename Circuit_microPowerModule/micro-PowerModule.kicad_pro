@@ -328,6 +328,10 @@
       ""
     ],
     [
+      "548af1f6-3b96-49ad-9e02-0d43f5bb3964",
+      "Input_power"
+    ],
+    [
       "7187d72d-86a6-4df3-a706-10f93237b261",
       "main_conrtol"
     ],
@@ -336,8 +340,8 @@
       "OuputPower"
     ],
     [
-      "548af1f6-3b96-49ad-9e02-0d43f5bb3964",
-      "Input_power"
+      "ff7f9ef2-679c-4e45-a086-9ba6ae131839",
+      "peripheral"
     ]
   ],
   "text_variables": {}

@@ -974,7 +974,7 @@
     (stroke (width 0) (type default))
     (uuid 1de5bd71-c102-4c0d-a4fb-a110c35c681a)
   )
-  (wire (pts (xy 128.27 72.771) (xy 135.255 72.771))
+  (wire (pts (xy 128.27 72.771) (xy 123.952 72.771))
     (stroke (width 0) (type default))
     (uuid 28dbce59-871c-4134-a880-b58fd46c7a48)
   )
@@ -1017,6 +1017,10 @@
   (wire (pts (xy 220.98 58.42) (xy 209.042 58.42))
     (stroke (width 0) (type default))
     (uuid 46937ef2-160e-4656-83fe-e2477d728916)
+  )
+  (wire (pts (xy 128.27 72.771) (xy 144.526 72.771))
+    (stroke (width 0) (type default))
+    (uuid 4708e556-fbd1-4d03-9b93-a70f51700942)
   )
   (wire (pts (xy 137.541 85.979) (xy 173.99 85.979))
     (stroke (width 0) (type default))
@@ -1110,10 +1114,6 @@
     (stroke (width 0) (type default))
     (uuid 8c1720bb-b136-46f4-8744-4e03a816033f)
   )
-  (wire (pts (xy 140.335 72.771) (xy 144.526 72.771))
-    (stroke (width 0) (type default))
-    (uuid 8db91978-a411-4323-ac71-621535b6dc03)
-  )
   (wire (pts (xy 112.014 106.553) (xy 112.014 102.362))
     (stroke (width 0) (type default))
     (uuid 8e8ec9fe-65aa-423c-bcfe-bb007d3e9775)
@@ -1146,6 +1146,10 @@
     (stroke (width 0) (type default))
     (uuid 9f281144-7521-4ab1-81c5-12590f9d26bb)
   )
+  (wire (pts (xy 118.872 72.771) (xy 113.411 72.771))
+    (stroke (width 0) (type default))
+    (uuid 9f76f12b-a80d-40e3-82e1-3118d7ea486d)
+  )
   (wire (pts (xy 62.738 116.205) (xy 66.04 116.205))
     (stroke (width 0) (type default))
     (uuid a0ccb8be-80fe-45a4-8971-02ac6384c47e)
@@ -1161,10 +1165,6 @@
   (wire (pts (xy 93.726 67.183) (xy 93.726 68.326))
     (stroke (width 0) (type default))
     (uuid acff6b8f-85b1-450c-95f8-537036e3c79b)
-  )
-  (wire (pts (xy 128.27 72.771) (xy 113.411 72.771))
-    (stroke (width 0) (type default))
-    (uuid b01cfb86-698b-4517-a6d3-3c253d2b95c9)
   )
   (wire (pts (xy 112.014 106.553) (xy 112.014 113.665))
     (stroke (width 0) (type default))
@@ -1341,7 +1341,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 206.502 55.88 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 056d6e3a-41f2-4f5f-beb9-3c6f7f90898e)
-    (property "Reference" "R1" (at 208.153 54.737 90)
+    (property "Reference" "R?" (at 208.153 54.737 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0R/5%" (at 212.725 54.737 90)
@@ -1358,7 +1358,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R32") (unit 1)
@@ -1370,7 +1370,7 @@
   (symbol (lib_id "Sensor_Energy:INA219BxD") (at 193.802 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0893df16-d740-4c99-8a66-c7b4c79b21b9)
-    (property "Reference" "U1" (at 195.7579 42.418 0)
+    (property "Reference" "U?" (at 195.7579 42.418 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "INA219BxD" (at 195.7579 44.958 0)
@@ -1393,7 +1393,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "U1") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "U5") (unit 1)
@@ -1405,7 +1405,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 60.452 149.987 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 19488a76-02d1-446d-9ee6-2a3711c54f6b)
-    (property "Reference" "R1" (at 64.135 152.019 90)
+    (property "Reference" "R?" (at 64.135 152.019 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1K/5%" (at 68.199 153.67 90)
@@ -1422,7 +1422,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R36") (unit 1)
@@ -1459,7 +1459,7 @@
   (symbol (lib_id "Analog_DAC:MCP4725xxx-xCH") (at 76.2 147.447 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 26231145-ac1b-4ab2-9b18-f9657fd8a993)
-    (property "Reference" "U3" (at 85.852 151.765 0)
+    (property "Reference" "U?" (at 85.852 151.765 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP4725xxx-xCH" (at 86.36 154.051 0)
@@ -1480,7 +1480,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "U3") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "U10") (unit 1)
@@ -1810,7 +1810,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 60.452 118.745 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 643e001b-5383-47f6-9c57-74cc0919f333)
-    (property "Reference" "R1" (at 64.135 120.777 90)
+    (property "Reference" "R?" (at 64.135 120.777 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1K/5%" (at 68.199 122.428 90)
@@ -1827,7 +1827,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R8") (unit 1)
@@ -1890,7 +1890,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 165.1 72.771 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f7826db-72e6-4c12-b14f-6cfe63be2839)
-    (property "Reference" "R1" (at 163.195 68.199 90)
+    (property "Reference" "R?" (at 163.195 68.199 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1R/1%" (at 163.195 70.104 90)
@@ -1907,7 +1907,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R31") (unit 1)
@@ -2007,7 +2007,7 @@
     (property "Datasheet" "" (at 55.88 31.115 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e92ea311-a93f-4036-abed-18760c3c84d0))
+    (pin "1" (uuid 1227c4b4-075e-469c-ab9c-a5c743e55b65))
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
@@ -2145,19 +2145,19 @@
     )
   )
 
-  (symbol (lib_id "Device:L_Small") (at 137.795 72.771 90) (unit 1)
+  (symbol (lib_id "Device:L_Small") (at 121.412 72.771 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 98b28beb-5a6f-4d95-97a0-759e18e11097)
-    (property "Reference" "L1" (at 137.795 68.834 90)
+    (property "Reference" "L1" (at 121.412 68.834 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "4.7uH" (at 137.795 71.374 90)
+    (property "Value" "4.7uH" (at 121.412 71.374 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 137.795 72.771 0)
+    (property "Footprint" "" (at 121.412 72.771 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 137.795 72.771 0)
+    (property "Datasheet" "~" (at 121.412 72.771 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d27a4a28-5a43-454d-95e8-295b9b907c9f))
@@ -2174,7 +2174,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 99.314 67.183 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9a46a3d1-1f29-41ad-be23-4ae79fb1795c)
-    (property "Reference" "R1" (at 97.409 62.611 90)
+    (property "Reference" "R?" (at 97.409 62.611 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10R/5%" (at 97.409 64.516 90)
@@ -2191,7 +2191,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R4") (unit 1)
@@ -2315,7 +2315,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 68.58 80.391 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a9a262f5-86ba-46bb-b006-2cb51e431ff8)
-    (property "Reference" "R1" (at 65.913 79.756 0)
+    (property "Reference" "R?" (at 65.913 79.756 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100K/5%" (at 65.913 82.296 0)
@@ -2332,7 +2332,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R2") (unit 1)
@@ -2401,7 +2401,7 @@
   (symbol (lib_id "Regulator_Switching:MT3608") (at 81.026 36.576 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b10e7969-c4dd-4355-8f32-13c01b29d72b)
-    (property "Reference" "U4" (at 81.026 27.94 0)
+    (property "Reference" "U?" (at 81.026 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MT3608" (at 81.026 30.48 0)
@@ -2422,7 +2422,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "U4") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "U1") (unit 1)
@@ -2466,7 +2466,7 @@
   (symbol (lib_id "Analog_DAC:MCP4725xxx-xCH") (at 76.2 116.205 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c24d7417-da0e-4ae3-b617-7bc19757ec55)
-    (property "Reference" "U3" (at 85.852 120.523 0)
+    (property "Reference" "U?" (at 85.852 120.523 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP4725xxx-xCH" (at 86.36 122.809 0)
@@ -2487,7 +2487,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "U3") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "U3") (unit 1)
@@ -2499,7 +2499,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 68.58 88.773 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c9d58f2e-0ce1-43e6-8dbf-f3d7e8183340)
-    (property "Reference" "R1" (at 65.913 88.138 0)
+    (property "Reference" "R?" (at 65.913 88.138 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "9K1/5%" (at 65.913 90.678 0)
@@ -2516,7 +2516,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R3") (unit 1)
@@ -2580,7 +2580,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 101.219 46.609 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd9a6280-6980-421b-9941-39436438c8fb)
-    (property "Reference" "R1" (at 102.87 45.339 0)
+    (property "Reference" "R?" (at 102.87 45.339 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "2.2K/5%" (at 102.87 47.371 0)
@@ -2597,7 +2597,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R35") (unit 1)
@@ -2635,7 +2635,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 206.502 58.42 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d536af23-3794-42bf-9568-23e75d6809c6)
-    (property "Reference" "R1" (at 208.153 57.404 90)
+    (property "Reference" "R?" (at 208.153 57.404 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0R/5%" (at 212.725 57.277 90)
@@ -2652,7 +2652,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R33") (unit 1)
@@ -2664,7 +2664,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 122.174 92.456 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d6214f28-1fc4-460b-8fc5-ef294b84ca40)
-    (property "Reference" "R1" (at 125.857 94.488 90)
+    (property "Reference" "R?" (at 125.857 94.488 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "20.5K/5%" (at 132.334 96.647 90)
@@ -2681,7 +2681,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R5") (unit 1)
@@ -2693,7 +2693,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 112.014 99.822 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d6b15476-c1be-4653-b356-7ecef402b2fc)
-    (property "Reference" "R1" (at 113.665 98.552 0)
+    (property "Reference" "R?" (at 113.665 98.552 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "62K/5%" (at 113.665 100.584 0)
@@ -2710,7 +2710,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R7") (unit 1)
@@ -2772,7 +2772,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 99.695 77.216 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e8ae07fa-6393-40c5-ac84-e1387e0c5381)
-    (property "Reference" "R1" (at 103.378 79.248 90)
+    (property "Reference" "R?" (at 103.378 79.248 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100K/5%" (at 109.855 81.407 90)
@@ -2789,7 +2789,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
           (reference "R6") (unit 1)
