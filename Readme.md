@@ -17,11 +17,11 @@
 2. Scope：
  - RFQ
      1. [x] Over voltage protection circuit
-     2. [ ] Compatible [OpenLog](https://github.com/sparkfun/OpenLog) Module
-     3. [ ] Positive and negative load voltage signals can be controlled by the H-bridge
-     4. [ ] MCU auto-regulator function
-     5. [ ] Real time display of voltage and current
-     6. [ ] Support [MikroBus](https://www.mikroe.com/mikrobus) Foot Position
+     2. [x] Support [MikroBus](https://www.mikroe.com/mikrobus) Foot Position
+     3. [ ] Compatible [OpenLog](https://github.com/sparkfun/OpenLog) Module
+     4. [ ] Positive and negative load voltage signals can be controlled by the H-bridge
+     5. [ ] MCU auto-regulator function
+     6. [ ] Real time display of voltage and current
      7. [ ] Expansion of the MAX6675 Module K-Type Thermocouple Temperature Sensor using the SPI interface in the Mikrobus hardware interface Thermocouple Sensor
      8. [ ] PCB size and pinout support for [Arduino UNO](https://docs.arduino.cc/hardware/make-your-uno-kit)
      9. [ ] Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
