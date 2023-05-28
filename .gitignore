@@ -3,6 +3,7 @@
 *cache
 *.xml
 \#auto_saved_files\#
+*-backups/
 
 _autosave*
 __MACOSX/

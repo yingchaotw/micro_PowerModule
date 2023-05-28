@@ -458,7 +458,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "schematic_images/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -473,16 +473,16 @@
       ""
     ],
     [
+      "7187d72d-86a6-4df3-a706-10f93237b261",
+      "main_contorl"
+    ],
+    [
       "548af1f6-3b96-49ad-9e02-0d43f5bb3964",
       "Input_power"
     ],
     [
-      "7187d72d-86a6-4df3-a706-10f93237b261",
-      "main_conrtol"
-    ],
-    [
       "4d2335ad-4917-40e3-b9fc-5e8d69783b2a",
-      "OuputPower"
+      "OutputPower"
     ],
     [
       "ff7f9ef2-679c-4e45-a086-9ba6ae131839",

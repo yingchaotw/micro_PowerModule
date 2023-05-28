@@ -33,6 +33,8 @@
 <BR/>
 plug-in module. ex. Temperature sensor, etc.. <br/>
 
+[Schematic Readme](./Circuit_microPowerModule/Readme.md)
+
 # SW FlowChart
 ```mermaid
 flowchart TD
