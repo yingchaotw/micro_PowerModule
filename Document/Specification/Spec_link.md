@@ -11,3 +11,6 @@
 6. [Waveshare Products](https://www.waveshare.com/product/rp2040-zero.htm)
 
 
+# Protocol
+
+[Standard Commands for Programmable Instrumentation](https://magna-power.com/assets/docs/html_ts/index-scpi.html)
