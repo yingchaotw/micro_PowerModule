@@ -40,4 +40,9 @@
   (pad "" thru_hole circle (at 2.5 42.5 180) (size 4 4) (drill 3.5) (layers "*.Cu" "*.Mask") (tstamp ca9c1090-f48e-4d0d-b711-bbb99077b257))
   (pad "" thru_hole circle (at 42.25 42.25 180) (size 4 4) (drill 3.5) (layers "*.Cu" "*.Mask") (tstamp 7b86bf03-ae41-48b1-949d-591b76fabe03))
   (pad "" thru_hole circle (at 42.75 2.75 180) (size 4 4) (drill 3.5) (layers "*.Cu" "*.Mask") (tstamp 14a4a868-cb53-4067-865d-34f569bb6cbb))
+  (model "${KIPRJMOD}/3D_Module/Nokia_5110_LCD-Nokia5111.wrl"
+    (offset (xyz 0 -44 0))
+    (scale (xyz 0.4 0.4 1))
+    (rotate (xyz 0 0 0))
+  )
 )
