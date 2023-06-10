@@ -917,119 +917,6 @@
         )
       )
     )
-    (symbol "LED:WS2812B" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 5.08 5.715 0)
-        (effects (font (size 1.27 1.27)) (justify right bottom))
-      )
-      (property "Value" "WS2812B" (at 1.27 -5.715 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 1.27 -7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" (at 2.54 -9.525 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_keywords" "RGB LED NeoPixel addressable" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "RGB LED with integrated controller" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "WS2812B_0_0"
-        (text "RGB" (at 2.286 -4.191 0)
-          (effects (font (size 0.762 0.762)))
-        )
-      )
-      (symbol "WS2812B_0_1"
-        (polyline
-          (pts
-            (xy 1.27 -3.556)
-            (xy 1.778 -3.556)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 1.778 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 4.699 -3.556)
-            (xy 2.667 -3.556)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 -2.54)
-            (xy 1.27 -3.556)
-            (xy 1.27 -3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 -1.524)
-            (xy 1.27 -2.54)
-            (xy 1.27 -2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.683 -1.016)
-            (xy 3.683 -3.556)
-            (xy 3.683 -4.064)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 4.699 -1.524)
-            (xy 2.667 -1.524)
-            (xy 3.683 -3.556)
-            (xy 4.699 -1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 5.08 5.08) (end -5.08 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "WS2812B_1_1"
-        (pin power_in line (at 0 7.62 270) (length 2.54)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 7.62 0 180) (length 2.54)
-          (name "DOUT" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "VSS" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 0 0) (length 2.54)
-          (name "DIN" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "MCU_RaspberryPi:RP2040" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 17.78 45.72 0)
         (effects (font (size 1.27 1.27)))
@@ -1701,9 +1588,6 @@
   (junction (at 191.77 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 82c08a07-f7f3-4de8-b176-d786b18351f8)
   )
-  (junction (at 245.745 24.13) (diameter 0) (color 0 0 0 0)
-    (uuid 84cc3198-ffce-41e1-b245-a552fc218165)
-  )
   (junction (at 195.58 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 89644434-3b8b-4c91-b3f0-4ab729f085d3)
   )
@@ -1715,9 +1599,6 @@
   )
   (junction (at 203.2 24.13) (diameter 0) (color 0 0 0 0)
     (uuid a1da117a-10de-4de8-98c4-727aebe68206)
-  )
-  (junction (at 245.745 34.29) (diameter 0) (color 0 0 0 0)
-    (uuid a2306368-7461-4c08-b4bf-8edd2b9e871c)
   )
   (junction (at 157.48 24.13) (diameter 0) (color 0 0 0 0)
     (uuid a2a7245d-2fbd-4c56-a3d6-9148132ed77d)
@@ -1797,10 +1678,6 @@
     (stroke (width 0) (type default))
     (uuid 0f68c7ca-3f47-4a24-b93c-e38b8772b2b9)
   )
-  (wire (pts (xy 266.7 120.396) (xy 266.7 121.666))
-    (stroke (width 0) (type default))
-    (uuid 10f357b1-6c54-403d-8393-d0fa887832f5)
-  )
   (wire (pts (xy 199.39 31.75) (xy 199.39 30.48))
     (stroke (width 0) (type default))
     (uuid 11acd781-f228-469c-95a5-16c3d68b6826)
@@ -1852,10 +1729,6 @@
   (wire (pts (xy 57.15 32.385) (xy 57.15 29.845))
     (stroke (width 0) (type default))
     (uuid 260a1ce7-77ce-46fd-b819-89df1c2ff1ac)
-  )
-  (wire (pts (xy 195.834 127.254) (xy 196.596 127.254))
-    (stroke (width 0) (type default))
-    (uuid 292894d7-a82b-4ddc-b73e-d10120e4739e)
   )
   (wire (pts (xy 145.034 78.994) (xy 133.985 78.994))
     (stroke (width 0) (type default))
@@ -1913,10 +1786,6 @@
     (stroke (width 0) (type default))
     (uuid 42888d6b-eb69-424d-a4ce-24b3a28e8c5e)
   )
-  (wire (pts (xy 245.745 22.479) (xy 245.745 24.13))
-    (stroke (width 0) (type default))
-    (uuid 440447bb-f499-45ba-a1e0-c874e6f864a9)
-  )
   (wire (pts (xy 136.652 106.934) (xy 135.255 106.934))
     (stroke (width 0) (type default))
     (uuid 459ad746-0696-4b3b-a23d-6247aa965dc0)
@@ -1944,10 +1813,6 @@
   (wire (pts (xy 259.588 24.257) (xy 262.128 24.257))
     (stroke (width 0) (type default))
     (uuid 5947dead-2590-4753-bafd-cd639929c75a)
-  )
-  (wire (pts (xy 259.08 129.286) (xy 252.095 129.286))
-    (stroke (width 0) (type default))
-    (uuid 5c22b85f-6ac4-441a-9260-cf2a155e729b)
   )
   (wire (pts (xy 172.974 43.434) (xy 172.974 42.418))
     (stroke (width 0) (type default))
@@ -2133,10 +1998,6 @@
     (stroke (width 0) (type default))
     (uuid a60dc93b-c7c9-44fb-8bc9-36736cee7f16)
   )
-  (wire (pts (xy 266.7 138.684) (xy 266.7 136.906))
-    (stroke (width 0) (type default))
-    (uuid a6cb106e-21c6-408d-8cc4-7a454ddb37dc)
-  )
   (wire (pts (xy 203.2 31.75) (xy 207.01 31.75))
     (stroke (width 0) (type default))
     (uuid a82fd0ec-cdc7-49fd-8b08-9e777caf04c7)
@@ -2165,10 +2026,6 @@
     (stroke (width 0) (type default))
     (uuid b135929f-59d4-4f82-a6da-5ec8283828e3)
   )
-  (wire (pts (xy 245.745 34.29) (xy 245.745 35.814))
-    (stroke (width 0) (type default))
-    (uuid b1f26a43-9e7c-4a8b-98b3-007231c777e3)
-  )
   (wire (pts (xy 31.623 64.897) (xy 31.623 66.929))
     (stroke (width 0) (type default))
     (uuid b21654b7-1a8b-4e71-a7c3-783a1f92a2f8)
@@ -2189,7 +2046,7 @@
     (stroke (width 0) (type default))
     (uuid b5f9de2f-3ecf-4ac2-96cc-33f6ffe6c317)
   )
-  (wire (pts (xy 195.834 112.014) (xy 202.184 112.014))
+  (wire (pts (xy 195.834 112.014) (xy 198.12 112.014))
     (stroke (width 0) (type default))
     (uuid b601c5a4-78d8-4153-af67-54cd3587a70c)
   )
@@ -2200,10 +2057,6 @@
   (wire (pts (xy 145.034 73.914) (xy 133.985 73.914))
     (stroke (width 0) (type default))
     (uuid b97332e8-79e0-4f3e-8aef-84faaeb19bec)
-  )
-  (wire (pts (xy 195.834 124.714) (xy 196.596 124.714))
-    (stroke (width 0) (type default))
-    (uuid b9e102b4-bf1a-4070-bd39-3cd5a8028e15)
   )
   (wire (pts (xy 207.01 24.13) (xy 203.2 24.13))
     (stroke (width 0) (type default))
@@ -2216,10 +2069,6 @@
   (wire (pts (xy 161.29 24.13) (xy 161.29 25.4))
     (stroke (width 0) (type default))
     (uuid c022b090-7575-48f7-a9fb-f0346ee9bb96)
-  )
-  (wire (pts (xy 245.745 13.97) (xy 245.745 17.399))
-    (stroke (width 0) (type default))
-    (uuid c11a1f6d-2902-4f64-b921-1994c0e16477)
   )
   (wire (pts (xy 120.777 101.6) (xy 121.92 101.6))
     (stroke (width 0) (type default))
@@ -2260,6 +2109,10 @@
   (wire (pts (xy 60.96 109.22) (xy 61.849 109.22))
     (stroke (width 0) (type default))
     (uuid d49eb3ca-85fd-4e01-9229-0bfc8385af6f)
+  )
+  (wire (pts (xy 195.834 124.714) (xy 196.85 124.714))
+    (stroke (width 0) (type default))
+    (uuid d4ae8bdb-7aae-4438-aeb1-c3c0c935542c)
   )
   (wire (pts (xy 207.01 24.13) (xy 207.01 25.4))
     (stroke (width 0) (type default))
@@ -2329,10 +2182,6 @@
     (stroke (width 0) (type default))
     (uuid e69a017c-32d5-44e7-9f04-f1f789689748)
   )
-  (wire (pts (xy 245.745 24.13) (xy 248.285 24.13))
-    (stroke (width 0) (type default))
-    (uuid e6d1694b-360c-4a08-b1d7-14cfd8bf7603)
-  )
   (wire (pts (xy 46.863 32.385) (xy 50.165 32.385))
     (stroke (width 0) (type default))
     (uuid e8021bfa-c9f8-4fac-9502-7ae58d47bf4b)
@@ -2348,10 +2197,6 @@
   (wire (pts (xy 39.37 103.124) (xy 39.37 101.854))
     (stroke (width 0) (type default))
     (uuid eb1c43f8-17cd-4029-84de-af5968cf4676)
-  )
-  (wire (pts (xy 195.834 114.554) (xy 202.819 114.554))
-    (stroke (width 0) (type default))
-    (uuid ebfe75c1-a31e-4444-9317-b453ec74af42)
   )
   (wire (pts (xy 145.034 119.634) (xy 137.16 119.634))
     (stroke (width 0) (type default))
@@ -2369,13 +2214,13 @@
     (stroke (width 0) (type default))
     (uuid ef2456e8-08bc-4aa1-b46f-05575461440d)
   )
-  (wire (pts (xy 248.285 34.29) (xy 245.745 34.29))
-    (stroke (width 0) (type default))
-    (uuid f25e8847-70eb-4d3f-a34d-edadaf4b8e20)
-  )
   (wire (pts (xy 157.48 31.75) (xy 161.29 31.75))
     (stroke (width 0) (type default))
     (uuid f6a38e85-4310-421a-8e42-6c9ce4fe84cc)
+  )
+  (wire (pts (xy 195.834 114.554) (xy 198.12 114.554))
+    (stroke (width 0) (type default))
+    (uuid fb1869ff-44f5-44ce-84b6-ee855a809d21)
   )
   (wire (pts (xy 55.245 32.385) (xy 57.15 32.385))
     (stroke (width 0) (type default))
@@ -3086,10 +2931,6 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 5279b66c-684f-4499-ac88-9d7a450c5bd0)
   )
-  (label "GPIO25" (at 252.095 129.286 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 544a9b5f-79d8-40e7-8f3d-881ab03e7313)
-  )
   (label "USB_P" (at 53.721 45.085 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 57bb59e2-d62e-4058-8d24-f35b350d2d30)
@@ -3097,10 +2938,6 @@
   (label "QSPI_SCLK" (at 72.009 111.76 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 58099e6b-4075-4579-adde-94e95ee5ae7c)
-  )
-  (label "GPIO25" (at 202.819 114.554 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 5971ba94-b952-45f0-8191-9649dc50e02c)
   )
   (label "QSPI_NSS" (at 133.985 68.834 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -3175,10 +3012,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 33978d15-25ae-44cf-8238-1dbe742d23aa)
   )
-  (hierarchical_label "ADC_ADDR1" (shape input) (at 196.596 127.254 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 3a258c60-d19c-409a-a155-72d2e9d52146)
-  )
   (hierarchical_label "SPI1_SCK" (shape output) (at 197.993 76.454 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3cb93768-98a8-4618-9eaf-0e6336335ee8)
@@ -3191,7 +3024,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 575176cc-3960-4207-9e8b-702460932418)
   )
-  (hierarchical_label "ENC_SW" (shape input) (at 202.184 112.014 0) (fields_autoplaced)
+  (hierarchical_label "ENC_SW" (shape input) (at 198.12 112.014 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 5e81f6cc-eaf6-4277-9725-8c46a1c834e0)
   )
@@ -3223,6 +3056,10 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 84fff335-1629-4946-9f0f-3a7b676a2574)
   )
+  (hierarchical_label "Output_Ctrl" (shape output) (at 196.85 124.714 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 877c77e6-fcc5-48bd-acad-79a2e04adbf5)
+  )
   (hierarchical_label "I2C1_SCL" (shape output) (at 198.12 58.674 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 99cc8c6e-a89f-484c-b24e-be5073450cfa)
@@ -3230,10 +3067,6 @@
   (hierarchical_label "PWM1_A" (shape output) (at 197.612 96.774 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a11fa035-8ca6-4071-b607-58d0727c9b63)
-  )
-  (hierarchical_label "ADC_ADDR0" (shape input) (at 196.596 124.714 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid a8505c40-62cd-4403-9c72-ab2a2fdbcce5)
   )
   (hierarchical_label "I2C0_SDA" (shape bidirectional) (at 198.12 61.214 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -3246,6 +3079,10 @@
   (hierarchical_label "SPI1_Tx" (shape output) (at 197.993 78.994 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b9fb9988-97d9-4ae7-9142-ff5d722cfbb4)
+  )
+  (hierarchical_label "LET_CTRL" (shape output) (at 198.12 114.554 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid cf70635a-62b2-4009-a4be-cd436efa87a9)
   )
   (hierarchical_label "UART0_Rx" (shape input) (at 198.12 53.594 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -3275,7 +3112,7 @@
   (symbol (lib_id "power:VBUS") (at 48.895 23.368 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 048dc3df-f819-4854-9353-54288d1171db)
-    (property "Reference" "#PWR011" (at 48.895 27.178 0)
+    (property "Reference" "#PWR0203" (at 48.895 27.178 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 48.895 19.05 0)
@@ -3291,7 +3128,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR0203") (unit 1)
         )
       )
     )
@@ -3300,7 +3137,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 46.863 55.245 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ee0e6a9-e494-4732-9e87-e97cb27b76ff)
-    (property "Reference" "TP2" (at 47.752 55.245 0)
+    (property "Reference" "TP202" (at 47.752 55.245 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint_Small" (at 48.26 57.15 0)
@@ -3316,7 +3153,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "TP2") (unit 1)
+          (reference "TP202") (unit 1)
         )
       )
     )
@@ -3348,7 +3185,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R12") (unit 1)
+          (reference "R206") (unit 1)
         )
       )
     )
@@ -3380,7 +3217,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R16") (unit 1)
+          (reference "R204") (unit 1)
         )
       )
     )
@@ -3412,7 +3249,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R10") (unit 1)
+          (reference "R203") (unit 1)
         )
       )
     )
@@ -3441,32 +3278,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C25") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GNDREF") (at 266.7 138.684 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2a5d32d6-81a8-42ac-84d9-0dc2f14842e8)
-    (property "Reference" "#PWR013" (at 266.7 145.034 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDREF" (at 266.7 143.637 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 266.7 138.684 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 266.7 138.684 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6317f924-6101-4671-bcf5-2ebd927c18df))
-    (instances
-      (project "micro-PowerModule"
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR013") (unit 1)
+          (reference "C211") (unit 1)
         )
       )
     )
@@ -3498,7 +3310,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R15") (unit 1)
+          (reference "R209") (unit 1)
         )
       )
     )
@@ -3507,7 +3319,7 @@
   (symbol (lib_id "MCU_RaspberryPi:RP2040") (at 170.434 89.154 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2f0940e5-4099-402c-bc3a-6e6deca08661)
-    (property "Reference" "U6" (at 191.008 134.62 0)
+    (property "Reference" "U202" (at 191.008 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RP2040" (at 191.008 137.033 0)
@@ -3579,7 +3391,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "U6") (unit 1)
+          (reference "U202") (unit 1)
         )
       )
     )
@@ -3608,7 +3420,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C28") (unit 1)
+          (reference "C208") (unit 1)
         )
       )
     )
@@ -3617,7 +3429,7 @@
   (symbol (lib_id "power:+1V2") (at 165.354 40.513 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2fdae0ce-8ae3-46ed-9507-314803059dec)
-    (property "Reference" "#PWR017" (at 165.354 44.323 0)
+    (property "Reference" "#PWR0213" (at 165.354 44.323 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V2" (at 165.354 36.195 0)
@@ -3633,35 +3445,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR017") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "LED:WS2812B") (at 266.7 129.286 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3280ca24-6a4f-466f-94dd-3d41b77f1e9e)
-    (property "Reference" "D1" (at 260.477 135.763 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "WS2812B" (at 257.302 137.795 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 267.97 136.906 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" (at 269.24 138.811 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 6cdbfd84-69b4-4ad6-983a-f59848b6942e))
-    (pin "2" (uuid 7bb3fa4d-3ac7-4f71-820d-439fc4c230c0))
-    (pin "3" (uuid 483869a1-5dc3-4ef6-a271-850bcdc5bd37))
-    (pin "4" (uuid de312cf1-aa8f-4bcc-91eb-728ebae8b940))
-    (instances
-      (project "micro-PowerModule"
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "D1") (unit 1)
+          (reference "#PWR0213") (unit 1)
         )
       )
     )
@@ -3670,7 +3454,7 @@
   (symbol (lib_id "power:+3V3") (at 212.09 23.368 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3653ed49-3e64-4cd1-beef-3ec70a26f854)
-    (property "Reference" "#PWR057" (at 212.09 27.178 0)
+    (property "Reference" "#PWR0216" (at 212.09 27.178 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 212.09 19.05 0)
@@ -3686,7 +3470,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR0216") (unit 1)
         )
       )
     )
@@ -3695,7 +3479,7 @@
   (symbol (lib_id "power:+3V3") (at 50.8 100.965 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 41533287-0f0c-4faa-8c06-17575ff2ef26)
-    (property "Reference" "#PWR014" (at 50.8 104.775 0)
+    (property "Reference" "#PWR0204" (at 50.8 104.775 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 50.8 97.028 0)
@@ -3711,7 +3495,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR0204") (unit 1)
         )
       )
     )
@@ -3743,32 +3527,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 266.7 120.396 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 480e1025-f5a1-459f-a695-f38c2ade03b4)
-    (property "Reference" "#PWR012" (at 266.7 124.206 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 266.7 116.459 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 266.7 120.396 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 266.7 120.396 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 934a155d-fffd-4cc1-8ed3-75056b886cb5))
-    (instances
-      (project "micro-PowerModule"
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR012") (unit 1)
+          (reference "R207") (unit 1)
         )
       )
     )
@@ -3797,7 +3556,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C32") (unit 1)
+          (reference "C205") (unit 1)
         )
       )
     )
@@ -3806,7 +3565,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 52.705 29.845 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4c92a313-6f07-457f-bbea-9fdeb0a70912)
-    (property "Reference" "R?" (at 50.038 27.559 90)
+    (property "Reference" "R?" (at 47.879 27.559 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1K/5%" (at 53.721 27.559 90)
@@ -3829,7 +3588,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R9") (unit 1)
+          (reference "R202") (unit 1)
         )
       )
     )
@@ -3838,7 +3597,7 @@
   (symbol (lib_id "power:GNDREF") (at 170.434 134.874 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51db90c7-ea2e-4678-baaf-ed66fc9172e7)
-    (property "Reference" "#PWR024" (at 170.434 141.224 0)
+    (property "Reference" "#PWR0214" (at 170.434 141.224 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 170.434 139.827 0)
@@ -3854,7 +3613,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR0214") (unit 1)
         )
       )
     )
@@ -3883,32 +3642,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint_Small") (at 274.32 129.286 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 547ac717-eb9c-4fac-8298-e6ec827e4eab)
-    (property "Reference" "TP3" (at 275.209 129.286 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint_Small" (at 275.717 131.191 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro-Minature" (at 279.4 129.286 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 279.4 129.286 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7ca8a1e5-631c-42bb-80cd-f31671c59143))
-    (instances
-      (project "micro-PowerModule"
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "TP3") (unit 1)
+          (reference "C203") (unit 1)
         )
       )
     )
@@ -3937,7 +3671,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C26") (unit 1)
+          (reference "C210") (unit 1)
         )
       )
     )
@@ -3946,7 +3680,7 @@
   (symbol (lib_id "Jumper:SolderJumper_2_Bridged") (at 140.97 131.572 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5bb280e7-2353-44e9-896a-6fca9b664986)
-    (property "Reference" "JP1" (at 142.494 131.572 90)
+    (property "Reference" "JP201" (at 142.494 131.572 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "SolderJumper_2_Bridged" (at 143.51 133.477 90)
@@ -3963,7 +3697,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "JP1") (unit 1)
+          (reference "JP201") (unit 1)
         )
       )
     )
@@ -3972,7 +3706,7 @@
   (symbol (lib_id "power:GNDREF") (at 39.37 108.204 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5be2dfc5-7ec3-4201-a7c3-6abe327e0069)
-    (property "Reference" "#PWR016" (at 39.37 114.554 0)
+    (property "Reference" "#PWR0202" (at 39.37 114.554 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 39.37 113.157 0)
@@ -3988,7 +3722,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR0202") (unit 1)
         )
       )
     )
@@ -3997,7 +3731,7 @@
   (symbol (lib_id "Memory_Flash:W25Q128JVS") (at 50.8 116.84 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 631f606f-6bdb-4b6e-9ce0-b372b26e78cd)
-    (property "Reference" "U9" (at 44.196 128.397 0)
+    (property "Reference" "U201" (at 44.196 128.397 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "W25Q128JVS" (at 47.498 130.556 0)
@@ -4020,7 +3754,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "U9") (unit 1)
+          (reference "U201") (unit 1)
         )
       )
     )
@@ -4052,7 +3786,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R14") (unit 1)
+          (reference "R208") (unit 1)
         )
       )
     )
@@ -4061,7 +3795,7 @@
   (symbol (lib_id "power:GNDREF") (at 120.777 107.569 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6ca8e641-8f21-4a7a-b930-4c81959fccec)
-    (property "Reference" "#PWR076" (at 120.777 113.919 0)
+    (property "Reference" "#PWR0207" (at 120.777 113.919 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 120.777 111.506 0)
@@ -4077,7 +3811,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR0207") (unit 1)
         )
       )
     )
@@ -4086,7 +3820,7 @@
   (symbol (lib_id "power:GNDREF") (at 31.623 66.929 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 75856854-dcb8-4e72-826c-917905c1984c)
-    (property "Reference" "#PWR010" (at 31.623 73.279 0)
+    (property "Reference" "#PWR0201" (at 31.623 73.279 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 31.623 71.882 0)
@@ -4102,7 +3836,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR0201") (unit 1)
         )
       )
     )
@@ -4111,7 +3845,7 @@
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 120.396 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 79560af2-befb-4956-bb79-58f2eeec5f74)
-    (property "Reference" "J5" (at 125.984 116.332 0)
+    (property "Reference" "J202" (at 125.984 116.332 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Debug" (at 125.984 118.872 0)
@@ -4129,7 +3863,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "J5") (unit 1)
+          (reference "J202") (unit 1)
         )
       )
     )
@@ -4138,7 +3872,7 @@
   (symbol (lib_id "power:+3V3") (at 180.594 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 799742a4-43b9-44ab-8831-dd557cea870f)
-    (property "Reference" "#PWR018" (at 180.594 44.45 0)
+    (property "Reference" "#PWR0215" (at 180.594 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 180.594 36.322 0)
@@ -4154,7 +3888,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR0215") (unit 1)
         )
       )
     )
@@ -4163,7 +3897,7 @@
   (symbol (lib_id "power:GNDREF") (at 127 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 79e9d9b6-5dfb-4c7f-963e-846a7c7d1e94)
-    (property "Reference" "#PWR061" (at 127 135.89 0)
+    (property "Reference" "#PWR0209" (at 127 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 127 133.477 0)
@@ -4179,7 +3913,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR061") (unit 1)
+          (reference "#PWR0209") (unit 1)
         )
       )
     )
@@ -4188,7 +3922,7 @@
   (symbol (lib_id "power:+3V3") (at 125.857 50.546 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7a4ce1be-6421-4a64-ab6f-38a0908bf6bb)
-    (property "Reference" "#PWR019" (at 125.857 54.356 0)
+    (property "Reference" "#PWR0208" (at 125.857 54.356 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 125.857 46.228 0)
@@ -4204,7 +3938,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR0208") (unit 1)
         )
       )
     )
@@ -4213,7 +3947,7 @@
   (symbol (lib_id "power:+1V2") (at 151.13 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7a75cbf1-9e42-48b4-822c-f93994a9e51d)
-    (property "Reference" "#PWR059" (at 151.13 26.67 0)
+    (property "Reference" "#PWR0211" (at 151.13 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V2" (at 151.13 18.542 0)
@@ -4229,7 +3963,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR0211") (unit 1)
         )
       )
     )
@@ -4238,7 +3972,7 @@
   (symbol (lib_id "power:GNDREF") (at 151.13 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7ce48fde-f26b-4862-8103-541c01db3269)
-    (property "Reference" "#PWR060" (at 151.13 39.37 0)
+    (property "Reference" "#PWR0212" (at 151.13 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 151.13 37.973 0)
@@ -4254,7 +3988,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR0212") (unit 1)
         )
       )
     )
@@ -4283,7 +4017,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C31") (unit 1)
+          (reference "C204") (unit 1)
         )
       )
     )
@@ -4312,7 +4046,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C7") (unit 1)
+          (reference "C201") (unit 1)
         )
       )
     )
@@ -4341,7 +4075,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C27") (unit 1)
+          (reference "C209") (unit 1)
         )
       )
     )
@@ -4370,7 +4104,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C33") (unit 1)
+          (reference "C206") (unit 1)
         )
       )
     )
@@ -4379,7 +4113,7 @@
   (symbol (lib_id "power:GNDREF") (at 65.024 33.147 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a8490400-f846-4172-b5fc-7e59a4cbbff4)
-    (property "Reference" "#PWR09" (at 65.024 39.497 0)
+    (property "Reference" "#PWR0206" (at 65.024 39.497 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 65.024 38.1 0)
@@ -4395,32 +4129,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR09") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GNDREF") (at 245.745 35.814 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ad453040-1a95-43db-81cf-0765c3a6f157)
-    (property "Reference" "#PWR020" (at 245.745 42.164 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDREF" (at 245.745 40.64 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 245.745 35.814 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 245.745 35.814 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d42fec9d-9c80-4753-a0a9-dd125f6b7380))
-    (instances
-      (project "micro-PowerModule"
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR0206") (unit 1)
         )
       )
     )
@@ -4429,7 +4138,7 @@
   (symbol (lib_id "Switch:SW_MEC_5E") (at 262.128 29.337 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid afd2218e-98d8-4a8d-8c23-b5cbdb8f6a10)
-    (property "Reference" "SW3" (at 261.493 27.432 0)
+    (property "Reference" "SW201" (at 261.493 27.432 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "KMR2" (at 263.525 26.67 0)
@@ -4448,7 +4157,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "SW3") (unit 1)
+          (reference "SW201") (unit 1)
         )
       )
     )
@@ -4480,7 +4189,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R11") (unit 1)
+          (reference "R201") (unit 1)
         )
       )
     )
@@ -4489,7 +4198,7 @@
   (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0") (at 31.623 40.005 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c335af5d-4d57-46fc-8596-d6977e1deb01)
-    (property "Reference" "J1" (at 31.623 17.78 0)
+    (property "Reference" "J201" (at 31.623 17.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB_C_Receptacle_USB2.0" (at 31.623 20.32 0)
@@ -4521,7 +4230,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "J1") (unit 1)
+          (reference "J201") (unit 1)
         )
       )
     )
@@ -4530,7 +4239,7 @@
   (symbol (lib_id "power:GNDREF") (at 212.09 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c608723f-241c-436c-b752-71ac70f31e4d)
-    (property "Reference" "#PWR058" (at 212.09 39.37 0)
+    (property "Reference" "#PWR0217" (at 212.09 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 212.09 37.973 0)
@@ -4546,7 +4255,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR0217") (unit 1)
         )
       )
     )
@@ -4555,7 +4264,7 @@
   (symbol (lib_id "power:GNDREF") (at 50.8 130.937 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d517aa30-0f45-44dc-9b1c-6f4a23fb0cfe)
-    (property "Reference" "#PWR015" (at 50.8 137.287 0)
+    (property "Reference" "#PWR0205" (at 50.8 137.287 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 50.8 135.89 0)
@@ -4571,7 +4280,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR0205") (unit 1)
         )
       )
     )
@@ -4600,39 +4309,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small_US") (at 245.745 19.939 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d7c0ec49-cb8a-4e3d-aa1a-f70de02a0781)
-    (property "Reference" "R?" (at 241.681 17.653 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10K/5%" (at 243.586 13.589 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 245.745 19.939 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 245.745 19.939 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d4e443cb-108c-4035-8bbb-de0b883539b9))
-    (pin "2" (uuid 9ea71a09-3b92-4cab-a228-ad840d2f092c))
-    (instances
-      (project "micro-PowerModule"
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
-          (reference "R?") (unit 1)
-        )
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/4d2335ad-4917-40e3-b9fc-5e8d69783b2a"
-          (reference "R4") (unit 1)
-        )
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R18") (unit 1)
+          (reference "C202") (unit 1)
         )
       )
     )
@@ -4641,7 +4318,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 46.863 52.705 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d9f63fc5-23da-45dd-b6b0-689f4f74efa1)
-    (property "Reference" "TP1" (at 47.752 52.705 0)
+    (property "Reference" "TP201" (at 47.752 52.705 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint_Small" (at 52.197 52.705 0)
@@ -4657,35 +4334,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "TP1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_MEC_5E") (at 248.285 29.21 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid de9cf27d-e542-4340-82e3-0abfe8ad91e3)
-    (property "Reference" "SW2" (at 247.65 27.305 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "KMR2" (at 249.682 26.543 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" (at 240.665 29.21 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" (at 240.665 29.21 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 87078c63-5bc6-4c32-9c7f-028a0fc50278))
-    (pin "2" (uuid 1371a02a-55ca-4037-9c54-6d388ff4c2af))
-    (pin "3" (uuid 8f3c3f74-19da-40d2-9232-281ae6e502a7))
-    (pin "4" (uuid 5305d800-bf7e-43dc-b62f-5a4d90a0f7c3))
-    (instances
-      (project "micro-PowerModule"
-        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "SW2") (unit 1)
+          (reference "TP201") (unit 1)
         )
       )
     )
@@ -4694,7 +4343,7 @@
   (symbol (lib_id "power:GNDREF") (at 259.588 35.941 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid df46573c-5eca-4507-b7be-72892f086035)
-    (property "Reference" "#PWR021" (at 259.588 42.291 0)
+    (property "Reference" "#PWR0218" (at 259.588 42.291 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 259.588 40.767 0)
@@ -4710,7 +4359,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR0218") (unit 1)
         )
       )
     )
@@ -4719,7 +4368,7 @@
   (symbol (lib_id "Device:Crystal_GND24_Small") (at 124.46 101.6 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e817e61b-f58a-40ec-bb2d-64dae7d0b164)
-    (property "Reference" "Y2" (at 129.159 100.457 90)
+    (property "Reference" "Y201" (at 129.159 100.457 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "12MHz" (at 131.064 102.616 90)
@@ -4738,7 +4387,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "Y2") (unit 1)
+          (reference "Y201") (unit 1)
         )
       )
     )
@@ -4770,7 +4419,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "R17") (unit 1)
+          (reference "R205") (unit 1)
         )
       )
     )
@@ -4799,7 +4448,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C29") (unit 1)
+          (reference "C207") (unit 1)
         )
       )
     )
@@ -4808,7 +4457,7 @@
   (symbol (lib_id "power:GNDREF") (at 140.97 135.382 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fa8365f8-ebdd-4e14-947b-e0a9d15ba7b7)
-    (property "Reference" "#PWR062" (at 140.97 141.732 0)
+    (property "Reference" "#PWR0210" (at 140.97 141.732 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 140.97 139.573 0)
@@ -4824,7 +4473,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#PWR062") (unit 1)
+          (reference "#PWR0210") (unit 1)
         )
       )
     )
@@ -4853,7 +4502,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "C30") (unit 1)
+          (reference "C212") (unit 1)
         )
       )
     )
@@ -4883,7 +4532,7 @@
           (reference "#SYM1") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
-          (reference "#SYM2") (unit 1)
+          (reference "#SYM201") (unit 1)
         )
       )
     )

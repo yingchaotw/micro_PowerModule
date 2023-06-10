@@ -8,3 +8,6 @@
 _autosave*
 __MACOSX/
 .DS_Store
+
+# FreeCad file
+*.FCStd1

@@ -1251,6 +1251,58 @@
         )
       )
     )
+    (symbol "power:+1V2" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+1V2" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+1V2\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+1V2_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+1V2_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+1V2" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1299,6 +1351,58 @@
       (symbol "+3V3_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+3V3" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+5V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+5V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+5V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1450,6 +1554,98 @@
       (symbol "GNDREF_1_1"
         (pin power_in line (at 0 0 270) (length 0) hide
           (name "GNDREF" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "PWR_FLAG" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "flag power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line (at 0 0 90) (length 0)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
+    (symbol "power:VBUS" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "VBUS" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"VBUS\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "VBUS_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "VBUS_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "VBUS" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -2358,7 +2554,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 241.3 43.434 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0191a165-9425-4687-b1dd-21f32c4a97f8)
-    (property "Reference" "R28" (at 243.84 42.799 0)
+    (property "Reference" "R321" (at 243.84 42.799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1K/5%" (at 243.84 45.339 0)
@@ -2375,7 +2571,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R28") (unit 1)
+          (reference "R321") (unit 1)
         )
       )
     )
@@ -2403,7 +2599,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR0308") (unit 1)
         )
       )
     )
@@ -2412,7 +2608,7 @@
   (symbol (lib_id "Transistor_BJT:MMBT3906") (at 114.3 51.308 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0e033417-e467-4eb4-ab05-6b69dcd6a3ee)
-    (property "Reference" "Q2" (at 119.507 50.673 0)
+    (property "Reference" "Q301" (at 119.507 50.673 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MMBT3906" (at 119.507 53.213 0)
@@ -2430,7 +2626,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "Q2") (unit 1)
+          (reference "Q301") (unit 1)
         )
       )
     )
@@ -2439,7 +2635,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 68.58 43.434 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0e83ab1f-5602-4398-b101-e7c223247fd5)
-    (property "Reference" "R19" (at 71.12 42.799 0)
+    (property "Reference" "R303" (at 71.12 42.799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K/5%" (at 71.12 45.339 0)
@@ -2456,20 +2652,20 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R19") (unit 1)
+          (reference "R303") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:R_Small_US") (at 91.44 58.166 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid 1237b7f3-0fb5-478b-878c-e28129a00ed9)
-    (property "Reference" "R22" (at 91.694 54.991 0)
+    (property "Reference" "R304" (at 91.694 54.991 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "DNP" (at 87.122 58.039 0)
-      (effects (font (size 2.54 2.54) bold (color 255 0 0 1)) (justify left))
+    (property "Value" "10K/5%" (at 92.71 58.166 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 91.44 58.166 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2477,12 +2673,37 @@
     (property "Datasheet" "~" (at 91.44 58.166 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5ebb31a7-5539-428c-ab7b-fe0507f22713))
-    (pin "2" (uuid 94cda405-d391-476f-bd8f-abae837b38a5))
+    (pin "1" (uuid f2c11602-1072-4100-afc3-9c3d2f9421b5))
+    (pin "2" (uuid 6fc6e864-f21f-44b4-b39e-e627c89a84ed))
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R22") (unit 1)
+          (reference "R304") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 38.989 174.752 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 14313cdd-2ae2-41b6-a33a-67c921572034)
+    (property "Reference" "#FLG0302" (at 38.989 176.657 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 38.989 180.086 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 38.989 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 38.989 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4dfbc2f0-fcd3-4f11-92df-e48a6335f7f9))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#FLG0302") (unit 1)
         )
       )
     )
@@ -2511,7 +2732,7 @@
           (reference "C1") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C21") (unit 1)
+          (reference "C303") (unit 1)
         )
       )
     )
@@ -2520,7 +2741,7 @@
   (symbol (lib_id "power:GNDPWR") (at 50.8 83.312 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1b0e936b-4da8-484d-87e7-b8effdd8de93)
-    (property "Reference" "#PWR023" (at 50.8 88.392 0)
+    (property "Reference" "#PWR0305" (at 50.8 88.392 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 50.673 88.392 0)
@@ -2536,7 +2757,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR0305") (unit 1)
         )
       )
     )
@@ -2545,7 +2766,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 205.232 66.04 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1b115e16-9904-42fd-a160-568d1121518f)
-    (property "Reference" "R27" (at 205.232 60.96 90)
+    (property "Reference" "R318" (at 205.232 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0R/5%" (at 205.232 63.5 90)
@@ -2562,7 +2783,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R27") (unit 1)
+          (reference "R318") (unit 1)
         )
       )
     )
@@ -2591,7 +2812,7 @@
           (reference "C2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C18") (unit 1)
+          (reference "C305") (unit 1)
         )
       )
     )
@@ -2600,7 +2821,7 @@
   (symbol (lib_id "power:GNDPWR") (at 241.3 78.232 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1ea5b4b8-c4ba-4cee-a697-0e7086bd73cc)
-    (property "Reference" "#PWR022" (at 241.3 83.312 0)
+    (property "Reference" "#PWR0315" (at 241.3 83.312 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 241.173 83.312 0)
@@ -2616,7 +2837,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR0315") (unit 1)
         )
       )
     )
@@ -2648,7 +2869,7 @@
           (reference "R4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R38") (unit 1)
+          (reference "R315") (unit 1)
         )
       )
     )
@@ -2677,7 +2898,35 @@
           (reference "C3") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C19") (unit 1)
+          (reference "C306") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GNDREF") (at 73.025 174.879 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2e7050a3-9155-47d3-960e-3d96a3dcca63)
+    (property "Reference" "#PWR024" (at 73.025 181.229 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GNDREF" (at 73.025 179.832 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 73.025 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 73.025 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0913a727-724f-44b1-b1e8-4871958508bb))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
+          (reference "#PWR024") (unit 1)
+        )
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#PWR0307") (unit 1)
         )
       )
     )
@@ -2706,7 +2955,7 @@
           (reference "C1") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C17") (unit 1)
+          (reference "C304") (unit 1)
         )
       )
     )
@@ -2715,7 +2964,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 144.78 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3fc67fa4-6c82-44c4-9376-bcc20a9c371a)
-    (property "Reference" "R26" (at 147.32 42.545 0)
+    (property "Reference" "R307" (at 147.32 42.545 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K/5%" (at 147.32 45.085 0)
@@ -2732,20 +2981,20 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R26") (unit 1)
+          (reference "R307") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:D_Small") (at 204.47 55.88 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid 4b6ffb6d-30f3-4d4c-a75a-e2b8955c6675)
-    (property "Reference" "D3" (at 204.47 53.086 0)
+    (property "Reference" "D302" (at 204.47 53.086 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "DNP" (at 204.47 55.88 0)
-      (effects (font (size 2.54 2.54) bold (color 255 0 0 1)))
+    (property "Value" "DNP" (at 204.47 57.404 0)
+      (effects (font (size 2.54 2.54) bold (color 255 0 0 1)) hide)
     )
     (property "Footprint" "Diode_SMD:D_SOD-123" (at 204.47 55.88 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -2764,7 +3013,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "D3") (unit 1)
+          (reference "D302") (unit 1)
         )
       )
     )
@@ -2773,7 +3022,7 @@
   (symbol (lib_id "Simulation_SPICE:PMOS") (at 228.6 40.64 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51a7e8c0-ee73-48bc-af0c-d18be94d1087)
-    (property "Reference" "Q3" (at 228.6 31.75 90)
+    (property "Reference" "Q303" (at 228.6 31.75 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IRF5305S" (at 228.6 34.29 90)
@@ -2800,7 +3049,32 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "Q3") (unit 1)
+          (reference "Q303") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 38.989 174.752 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 52b3a06b-465e-40dd-97f7-3253b9a958b9)
+    (property "Reference" "#PWR0303" (at 38.989 178.562 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 38.989 171.323 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 38.989 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 38.989 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ba056570-7060-461f-940d-9607d52fcff1))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#PWR0303") (unit 1)
         )
       )
     )
@@ -2828,7 +3102,32 @@
           (reference "#PWR03") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR0310") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 60.452 174.879 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 55f32a87-e6ad-4676-aec8-7c563ec5a10d)
+    (property "Reference" "#FLG0304" (at 60.452 176.784 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 60.452 180.213 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 60.452 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 60.452 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7b30a957-7f4d-4eab-8a74-46a2331f4aeb))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#FLG0304") (unit 1)
         )
       )
     )
@@ -2860,7 +3159,7 @@
           (reference "R7") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R40") (unit 1)
+          (reference "R319") (unit 1)
         )
       )
     )
@@ -2889,7 +3188,7 @@
           (reference "C5") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C22") (unit 1)
+          (reference "C309") (unit 1)
         )
       )
     )
@@ -2898,7 +3197,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 144.78 67.818 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5e9079c5-370b-4c74-a2d0-da5b752262bc)
-    (property "Reference" "R29" (at 147.32 67.183 0)
+    (property "Reference" "R308" (at 147.32 67.183 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100R/5%" (at 147.32 69.723 0)
@@ -2915,7 +3214,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R29") (unit 1)
+          (reference "R308") (unit 1)
         )
       )
     )
@@ -2924,7 +3223,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 116.84 70.104 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 62d70aab-4239-4999-8b57-bc7296c8e408)
-    (property "Reference" "R21" (at 119.38 69.469 0)
+    (property "Reference" "R306" (at 119.38 69.469 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K/5%" (at 119.38 72.009 0)
@@ -2941,7 +3240,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R21") (unit 1)
+          (reference "R306") (unit 1)
         )
       )
     )
@@ -2950,7 +3249,7 @@
   (symbol (lib_id "power:GNDREF") (at 38.1 141.605 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65f679d8-df98-419c-8fa0-487a8e56d894)
-    (property "Reference" "#PWR077" (at 38.1 147.955 0)
+    (property "Reference" "#PWR0302" (at 38.1 147.955 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 38.1 146.05 0)
@@ -2966,7 +3265,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR0302") (unit 1)
         )
       )
     )
@@ -3001,7 +3300,7 @@
           (reference "U7") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "U11") (unit 1)
+          (reference "U301") (unit 1)
         )
       )
     )
@@ -3030,7 +3329,7 @@
           (reference "C6") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C20") (unit 1)
+          (reference "C308") (unit 1)
         )
       )
     )
@@ -3039,7 +3338,7 @@
   (symbol (lib_id "Device:C_Polarized_Small") (at 254 47.752 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 776fd4ee-0abe-4c5c-a023-bc406cbfd13d)
-    (property "Reference" "C13" (at 256.54 46.5709 0)
+    (property "Reference" "C311" (at 256.54 46.5709 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47u/50V" (at 256.54 49.1109 0)
@@ -3056,7 +3355,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C13") (unit 1)
+          (reference "C311") (unit 1)
         )
       )
     )
@@ -3088,7 +3387,32 @@
           (reference "R3") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R37") (unit 1)
+          (reference "R312") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 26.797 174.625 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7c048743-9f62-4f59-8174-05e9740ec234)
+    (property "Reference" "#FLG0301" (at 26.797 176.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 26.797 179.959 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 26.797 174.625 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 26.797 174.625 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e42c5ac6-88ec-4bb2-a359-272fd2323fc8))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#FLG0301") (unit 1)
         )
       )
     )
@@ -3097,7 +3421,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 186.182 66.04 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7fae6f3d-a06b-44df-856f-05b120f71e81)
-    (property "Reference" "R24" (at 186.182 60.96 90)
+    (property "Reference" "R314" (at 186.182 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1K/5%" (at 186.182 63.5 90)
@@ -3114,7 +3438,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R24") (unit 1)
+          (reference "R314") (unit 1)
         )
       )
     )
@@ -3123,7 +3447,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 38.1 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81f83afa-6e96-4d05-aa3c-b21c8d15ff9b)
-    (property "Reference" "R60" (at 40.64 132.08 0)
+    (property "Reference" "R302" (at 40.64 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.8K/5%" (at 40.64 134.62 0)
@@ -3140,7 +3464,63 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R60") (unit 1)
+          (reference "R302") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+1V2") (at 49.53 174.752 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 85978f7e-f832-4caf-8a07-14426a761600)
+    (property "Reference" "#PWR017" (at 49.53 178.562 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+1V2" (at 49.53 170.434 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 49.53 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 49.53 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5e3103b7-3756-48dd-9c5b-4e84fc1d5df2))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
+          (reference "#PWR017") (unit 1)
+        )
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#PWR0304") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VBUS") (at 26.797 174.625 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 88858b30-231a-4708-b73f-6ff84c1c1d60)
+    (property "Reference" "#PWR011" (at 26.797 178.435 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VBUS" (at 26.797 170.307 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 26.797 174.625 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 26.797 174.625 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid da056037-8688-4efc-8e1b-853924133c2b))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/7187d72d-86a6-4df3-a706-10f93237b261"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#PWR0301") (unit 1)
         )
       )
     )
@@ -3172,7 +3552,35 @@
           (reference "R5") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R41") (unit 1)
+          (reference "R320") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 60.452 174.879 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8c7ad7c2-fe08-42ef-be1e-f12c0663d5cb)
+    (property "Reference" "#PWR069" (at 60.452 178.689 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 60.452 169.545 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 60.452 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 60.452 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3e32a2a5-a2a7-419f-a2a1-eb6cbd79618d))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
+          (reference "#PWR069") (unit 1)
+        )
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#PWR0306") (unit 1)
         )
       )
     )
@@ -3181,7 +3589,7 @@
   (symbol (lib_id "Device:C_Small") (at 50.8 57.404 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 91cbc624-040e-426b-97c1-b916ed7c1571)
-    (property "Reference" "C11" (at 53.34 56.7753 0)
+    (property "Reference" "C302" (at 53.34 56.7753 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n/50V" (at 53.34 59.3153 0)
@@ -3198,7 +3606,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C11") (unit 1)
+          (reference "C302") (unit 1)
         )
       )
     )
@@ -3226,7 +3634,7 @@
           (reference "#PWR06") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR0314") (unit 1)
         )
       )
     )
@@ -3235,7 +3643,7 @@
   (symbol (lib_id "Simulation_SPICE:NMOS") (at 170.18 63.5 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 990b3668-6eca-462e-bce9-27044a128638)
-    (property "Reference" "Q4" (at 171.323 69.469 90)
+    (property "Reference" "Q302" (at 171.323 69.469 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RK7002BM" (at 175.26 71.501 90)
@@ -3262,7 +3670,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "Q4") (unit 1)
+          (reference "Q302") (unit 1)
         )
       )
     )
@@ -3271,7 +3679,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 99.314 51.308 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9afb4092-396d-4d44-b2f4-8a704ef47f1b)
-    (property "Reference" "R20" (at 99.314 46.99 90)
+    (property "Reference" "R305" (at 99.314 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K/5%" (at 99.314 49.53 90)
@@ -3288,7 +3696,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R20") (unit 1)
+          (reference "R305") (unit 1)
         )
       )
     )
@@ -3297,7 +3705,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 170.18 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9d299e7e-bac2-46a3-a98e-c1fd63e72b83)
-    (property "Reference" "R25" (at 172.72 45.085 0)
+    (property "Reference" "R313" (at 172.72 45.085 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100K/5%" (at 172.72 47.625 0)
@@ -3314,7 +3722,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R25") (unit 1)
+          (reference "R313") (unit 1)
         )
       )
     )
@@ -3323,7 +3731,7 @@
   (symbol (lib_id "Device:C_Small") (at 213.36 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a20f6f3b-e032-4883-97fa-abec20902128)
-    (property "Reference" "C10" (at 215.9 45.0913 0)
+    (property "Reference" "C307" (at 215.9 45.0913 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n/50V" (at 215.9 47.6313 0)
@@ -3340,7 +3748,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C10") (unit 1)
+          (reference "C307") (unit 1)
         )
       )
     )
@@ -3368,7 +3776,7 @@
           (reference "#PWR05") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR0312") (unit 1)
         )
       )
     )
@@ -3377,7 +3785,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 38.1 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a594cc74-d559-4a7e-a28c-41c271f4da87)
-    (property "Reference" "R59" (at 40.64 121.92 0)
+    (property "Reference" "R301" (at 40.64 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22K/5%" (at 40.64 124.46 0)
@@ -3394,7 +3802,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R59") (unit 1)
+          (reference "R301") (unit 1)
         )
       )
     )
@@ -3422,7 +3830,7 @@
           (reference "#PWR02") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR0311") (unit 1)
         )
       )
     )
@@ -3431,7 +3839,7 @@
   (symbol (lib_id "Device:C_Small") (at 267.335 53.594 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid af2de500-dc8a-49d2-9b23-6e8f5878010f)
-    (property "Reference" "C14" (at 264.795 52.9653 0)
+    (property "Reference" "C312" (at 264.795 52.9653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n/50V" (at 264.795 55.5053 0)
@@ -3448,7 +3856,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C14") (unit 1)
+          (reference "C312") (unit 1)
         )
       )
     )
@@ -3457,7 +3865,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 158.75 70.358 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8eca485-41e3-4a8e-be2f-1fa5bff525c0)
-    (property "Reference" "R30" (at 161.036 69.723 0)
+    (property "Reference" "R309" (at 161.036 69.723 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0R/5%" (at 161.036 72.263 0)
@@ -3474,7 +3882,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R30") (unit 1)
+          (reference "R309") (unit 1)
         )
       )
     )
@@ -3502,7 +3910,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR0309") (unit 1)
         )
       )
     )
@@ -3511,7 +3919,7 @@
   (symbol (lib_id "Switch:SW_SPDT") (at 154.686 55.88 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c12be9ce-6d3c-4cef-b2d3-0e36002ad569)
-    (property "Reference" "SW4" (at 154.686 49.53 0)
+    (property "Reference" "SW301" (at 154.686 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_SPDT" (at 154.686 52.07 0)
@@ -3529,7 +3937,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "SW4") (unit 1)
+          (reference "SW301") (unit 1)
         )
       )
     )
@@ -3558,7 +3966,7 @@
           (reference "L1") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "L3") (unit 1)
+          (reference "L301") (unit 1)
         )
       )
     )
@@ -3588,7 +3996,32 @@
           (reference "#SYM1") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#SYM3") (unit 1)
+          (reference "#SYM301") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 73.025 174.879 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ccba2d16-a88d-401e-a886-6c54c1746ae1)
+    (property "Reference" "#FLG0305" (at 73.025 172.974 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 73.025 169.545 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 73.025 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 73.025 174.879 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7c4cd92d-92f1-4ea7-9692-c49b49a5b710))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#FLG0305") (unit 1)
         )
       )
     )
@@ -3617,7 +4050,7 @@
           (reference "C4") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C23") (unit 1)
+          (reference "C310") (unit 1)
         )
       )
     )
@@ -3626,7 +4059,7 @@
   (symbol (lib_id "power:+3V3") (at 241.427 109.093 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d0c70a09-c836-4041-9c9b-d46d6aa8f24b)
-    (property "Reference" "#PWR049" (at 241.427 112.903 0)
+    (property "Reference" "#PWR0316" (at 241.427 112.903 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 241.427 105.664 0)
@@ -3642,7 +4075,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR0316") (unit 1)
         )
       )
     )
@@ -3670,7 +4103,7 @@
           (reference "#PWR07") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR0313") (unit 1)
         )
       )
     )
@@ -3698,7 +4131,7 @@
           (reference "#PWR07") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR0317") (unit 1)
         )
       )
     )
@@ -3730,7 +4163,7 @@
           (reference "R2") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R34") (unit 1)
+          (reference "R311") (unit 1)
         )
       )
     )
@@ -3762,7 +4195,7 @@
           (reference "R6") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R39") (unit 1)
+          (reference "R316") (unit 1)
         )
       )
     )
@@ -3771,7 +4204,7 @@
   (symbol (lib_id "Device:C_Polarized_Small") (at 37.338 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e52e84c2-ef18-4b65-962b-be10c195d670)
-    (property "Reference" "C12" (at 39.878 55.9689 0)
+    (property "Reference" "C301" (at 39.878 55.9689 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47u/50V" (at 39.878 58.5089 0)
@@ -3788,7 +4221,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "C12") (unit 1)
+          (reference "C301") (unit 1)
         )
       )
     )
@@ -3797,7 +4230,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 195.58 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e5d095ab-e122-4eca-8f64-ba8364281208)
-    (property "Reference" "R23" (at 198.12 45.085 0)
+    (property "Reference" "R317" (at 198.12 45.085 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100K/5%" (at 198.12 47.625 0)
@@ -3814,7 +4247,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R23") (unit 1)
+          (reference "R317") (unit 1)
         )
       )
     )
@@ -3823,7 +4256,7 @@
   (symbol (lib_id "Device:LED_Small") (at 241.3 52.832 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f22c9a07-b651-4a85-b79d-9d513de2e64e)
-    (property "Reference" "D4" (at 243.84 52.1335 90)
+    (property "Reference" "D303" (at 243.84 52.1335 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED_Green" (at 243.84 54.6735 90)
@@ -3840,7 +4273,7 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "D4") (unit 1)
+          (reference "D303") (unit 1)
         )
       )
     )
@@ -3849,7 +4282,7 @@
   (symbol (lib_id "Device:D_Zener_Small") (at 68.58 58.166 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f6bf34aa-d627-4f39-aa40-57bffc72d4cb)
-    (property "Reference" "D2" (at 70.612 58.166 90)
+    (property "Reference" "D301" (at 70.612 58.166 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Zener_24V/500mW" (at 70.612 60.452 90)
@@ -3866,7 +4299,32 @@
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "D2") (unit 1)
+          (reference "D301") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 49.53 174.752 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f6f63521-ba6e-4b52-86d2-5e0338d27a61)
+    (property "Reference" "#FLG0303" (at 49.53 176.657 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 49.53 180.086 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 49.53 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 49.53 174.752 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 38d08721-587a-4c05-af90-18fa005cd870))
+    (instances
+      (project "micro-PowerModule"
+        (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
+          (reference "#FLG0303") (unit 1)
         )
       )
     )
@@ -3898,7 +4356,7 @@
           (reference "R6") (unit 1)
         )
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f/548af1f6-3b96-49ad-9e02-0d43f5bb3964"
-          (reference "R42") (unit 1)
+          (reference "R310") (unit 1)
         )
       )
     )
