@@ -22,9 +22,8 @@
      4. [ ] MCU auto-regulator function
      5. [ ] Real time display of voltage and current
      6. [ ] Expansion of the MAX6675 Module K-Type Thermocouple Temperature Sensor using the SPI interface in the Mikrobus hardware interface Thermocouple Sensor
-     7. [ ] PCB size and pinout support for [Arduino UNO](https://docs.arduino.cc/hardware/make-your-uno-kit)
-     8. [ ] Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
-     9.  [ ] Use a led to display local or remote mode
+     7. [ ] Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
+     8.  [ ] Use a led to display local or remote mode
 
 # HW Block Diagram
 
@@ -62,38 +61,43 @@ The required hardware units are divided into the following 6 items.
 
 # PIN Assessment
 
-Raspberry Pi RP2040 pin assessment
+[Raspberry Pi RP2040 GPIO Function](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#_gpio_functions)
 
-0. UART0 (Tx) -> RS485 (In)
-1. UART0 (Rx) -> RS485 (Out)
-2. I2C1 (SDA)
-3. I2C1 (SCL)
-4. I2C0 (SDA)
-5. I2C0 (SCL)
-6. DS (MOSI)
-7. DS (CLK)
-8. UART1 (Tx)
-9. UART1 (Rx)
-10. SPI1 (SCK)
-11. SPI1 (Tx)
-12. SPI1 (Rx)
-13. SPI1 (nCS)
-14. DS (CE)
-15. DS (DC)
-16. PWM0_A
-17. MikroBus_RST
-18. PWM1_A
-19. PIO1_IRQ1
-20. PWM2_A
-21. PWM2_B
-22. RS_485 W/R
-23. DS_RST
-24. ENC_SW
-25. LED_CTRL
-26. Power_Monitor
-27. ADC1
-28. Output_CTRL
-29. (Reserve)
+
+```
+GPIO00 UART0 (Tx) --> RS485 (In)
+GPIO01 UART0 (Rx) <-- RS485 (Out)
+GPIO02 I2C1 (SDA) <-> (*Option) MikroBus SDA
+GPIO03 I2C1 (SCL) --> (*Option) MikroBus SCL
+GPIO04 I2C0 (SDA) <-> Power Management
+GPIO05 I2C0 (SCL) --> Power Management
+GPIO06 DS (MOSI)  --> Display Serial Input
+GPIO07 DS (CLK)   --> Display Clock Input
+GPIO08 UART1 (Tx) --> (*Option) MikroBus Tx
+GPIO09 UART1 (Rx) <-- (*Option) MikroBus Rx
+GPIO10 SPI1 (SCK) --> (*Option) MikroBus SCK
+GPIO11 SPI1 (Tx)  --> (*Option) MikroBus SDI
+GPIO12 SPI1 (Rx)  <-- (*Option) MikroBus SDO
+GPIO13 SPI1 (nCS) --> (*Option) MikroBus CSS
+GPIO14 DS (CE)    --> Display Chip Enable
+GPIO15 DS (DC)    --> Display Data Command
+GPIO16 PWM0_A     --> Buzzer
+GPIO17 MkBus_RST  --> (*Option) MikroBus Reset
+GPIO18 PWM1_A     --> (*Option) MikroBus PWM
+GPIO19 PIO1_IRQ1  --> (*Option) MikroBus INT
+GPIO20 PWM2_A     --> Encoder A phase
+GPIO21 PWM2_B     --> Encoder B phase
+GPIO22 RS_485 W/R --> RS485 (W/R)
+GPIO23 DS_RST     --> Display Reset
+GPIO24 ENC_SW     <-- Encoder Push Switch
+GPIO25 PWM4 B     --> WS2512 LED Control
+GPIO26 Monitor    <-- Input Power Monitor
+GPIO27 ADC1       <-- (*Option) MikroBus ADC
+GPIO28 Output_CTRL<-- Buck / Boost Switch
+GPIO29 (Reserve)  --> H-Bridge Control Load (Forward/Reverse)
+```
+
+
 
 # Potocol
 
