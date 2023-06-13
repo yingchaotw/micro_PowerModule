@@ -11,6 +11,11 @@
 6. [Waveshare Products](https://www.waveshare.com/product/rp2040-zero.htm)
 
 
+# Load Driver
+1. [L298-ST Website](https://www.st.com/en/motor-drivers/l298.html)
+2. [L298N](https://www.st.com/resource/en/datasheet/l298.pdf)
+
+
 # Protocol
 
 [Standard Commands for Programmable Instrumentation](https://magna-power.com/assets/docs/html_ts/index-scpi.html)
