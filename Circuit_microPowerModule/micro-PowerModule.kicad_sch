@@ -6,8 +6,8 @@
 
   (title_block
     (title "µPower Module")
-    (date "2023-05-19")
-    (rev "0.0")
+    (date "2023-06-14")
+    (rev "0.1")
   )
 
   (lib_symbols
