@@ -18,12 +18,12 @@
  - RFQ
      1. [x] Over voltage protection circuit
      2. [x] Support [MikroBus](https://www.mikroe.com/mikrobus) Foot Position
-     3. [ ] Positive and negative load voltage signals can be controlled by the H-bridge
-     4. [ ] MCU auto-regulator function
-     5. [ ] Real time display of voltage and current
-     6. [ ] Expansion of the MAX6675 Module K-Type Thermocouple Temperature Sensor using the SPI interface in the Mikrobus hardware interface Thermocouple Sensor
-     7. [ ] Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
-     8.  [ ] Use a led to display local or remote mode
+     3. [x] Positive and negative load voltage signals can be controlled by the H-bridge
+     4. [x] Display voltage/current/wattage [Nokia 5110 LCD](https://github.com/EleonoreMizo/pedalevite/blob/master/doc/datasheets/Philips%20PCD8544%20-%20IC%2C%2048x84%20pixels%20matrix%20LCD%20controller%20(Nokia%205110).pdf), [TI-Nokia 5110 LCD](https://www.ti.com/lit/ml/swrp182/swrp182.pdf), [Nokia5110 LCD ](https://components101.com/displays/nokia-5110-lcd)
+     5. [ ] MCU auto-regulator function
+     6. [ ] Real time display of voltage and current
+     7. [ ] Use a led to display local or remote mode
+        1. [x] Standard Commands for Programmable Instruments
 
 # HW Block Diagram
 

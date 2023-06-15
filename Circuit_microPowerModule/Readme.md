@@ -7,6 +7,24 @@
 <img src="./schematic_images/micro-PowerModule-OutputPower.svg">
 <img src="./schematic_images/micro-PowerModule-peripheral.svg">
 
+# ERC Report
+
+```
+ERC report (Thu 15 Jun 2023 20:53:31 CST, Encoding UTF8)
+
+***** Sheet /
+
+***** Sheet /main_contorl/
+
+***** Sheet /Input_power/
+
+***** Sheet /OutputPower/
+
+***** Sheet /peripheral/
+
+** ERC messages: 0  Errors 0  Warnings 0
+```
+[ERC File](./ERC.rpt)
 
 # Incldue Library
 [MikroBus](https://github.com/tclarke/kicad-mikroBUS)
