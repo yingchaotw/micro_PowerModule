@@ -1804,8 +1804,8 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f4c5f4c1-a01b-4411-9f1a-009868a2fb10))
-    (pin "3" (uuid 4d995530-5755-4b97-93d9-3fd2052d452b))
     (pin "2" (uuid afb3d6ab-e02e-4fe5-b585-85c858593c9e))
+    (pin "3" (uuid 4d995530-5755-4b97-93d9-3fd2052d452b))
     (instances
       (project "micro-PowerModule"
         (path "/38b19d1a-a8d3-49c0-a6a2-bee4e845832f"
