@@ -94,7 +94,7 @@ GPIO25 PWM4 B     --> WS2512 LED Control
 GPIO26 Monitor    <-- Input Power Monitor
 GPIO27 ADC1       <-- (*Option) MikroBus ADC
 GPIO28 Output_CTRL<-- Buck / Boost Switch
-GPIO29 (Reserve)  --> H-Bridge Control Load (Forward/Reverse)
+GPIO29 *Polarity  --> H-Bridge Control Load (Forward/Reverse)
 ```
 
 
